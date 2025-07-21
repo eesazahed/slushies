@@ -8,6 +8,19 @@
   #bg-overlay {
     transition: opacity 0.5s ease-in-out;
   }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  .pulse {
+    animation: pulse 0.75s ease-in-out infinite;
+  }
 </style>
 
 <svelte:head>
@@ -30,24 +43,24 @@
       <h1 on:click={toggleHeaderBg} class="cursor-pointer text-6xl md:text-8xl font-bold mb-8">Slushies</h1>
       <h2 class="text-4xl font-bold mb-8">A Flask YSWS</h2>
       <p class="text-lg max-w-3xl mx-auto font-bold">Build something cool with Flask, ship your project, and get rewarded!</p>
-      <a href="https://forms.fillout.com/t/8rVxgL1yHCus" target="_blank" rel="noopener noreferrer" class="mt-16 inline-block text-4xl font-bold px-9 py-4 rounded-xl text-white bg-fuchsia-500 hover:bg-fuchsia-600 transition">Click to RSVP!</a>
-      <div class="mt-16 grid grid-cols-2 gap-6">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Submit YSWS</a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Join Slack</a>
-        <a href="#requirements" class="inline-block px-9 py-4 rounded-xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Requirements</a>
-        <a href="#faq" class="inline-block px-9 py-4 rounded-xl text-white bg-cyan-600 hover:bg-cyan-500 transition">FAQ</a>
-      </div>
+      <a href="https://forms.fillout.com/t/8rVxgL1yHCus" target="_blank" rel="noopener noreferrer" class="pulse mt-16 inline-block text-4xl font-bold px-12 py-8 rounded-3xl text-white bg-sky-400 hover:bg-sky-600 transition">Click to RSVP!</a>
+      <!-- <div class="mt-16 grid grid-cols-2 gap-6">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Submit YSWS</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Join Slack</a>
+        <a href="#requirements" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Requirements</a>
+        <a href="#faq" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">FAQ</a>
+      </div> -->
     </div>
   </header>
 
-  <main class="max-w-4xl md:mt-24 mx-auto px-16 py-16 bg-white rounded-4xl">
+  <main class="max-w-4xl md:mt-24 mx-auto px-16 py-16 bg-white rounded-3xl">
     <section class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-10 text-center">
-      <div class="p-12 bg-green-100 border border-5 border-green-300 rounded-xl">
+      <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl">
         <h2 class="text-3xl font-semibold mb-4">You Ship</h2>
         <p class="mb-2 text-base font-medium">A Flask web app with at least 3 routes. Host it on Nest.</p>
         <p class="text-sm">(don't worry I'll make some tutorials)</p>
       </div>
-      <div class="p-12 bg-green-100 border border-5 border-green-300 rounded-xl">
+      <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl">
         <h2 class="text-3xl font-semibold mb-4">We Ship</h2>
         <p class="mb-2 text-base font-medium">$5 reward for food vendors</p>
         <p class="text-sm">(Get $10 if you implement CRUD with SQLite, CSV, Postgres, or similar)</p>
