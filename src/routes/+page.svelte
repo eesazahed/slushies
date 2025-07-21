@@ -30,6 +30,7 @@
       <h1 on:click={toggleHeaderBg} class="cursor-pointer text-6xl md:text-8xl font-bold mb-8">Slushies</h1>
       <h2 class="text-4xl font-bold mb-8">A Flask YSWS</h2>
       <p class="text-lg max-w-3xl mx-auto">Build something cool with Flask, ship your project, and get rewarded!</p>
+      <a href="https://forms.fillout.com/t/8rVxgL1yHCus" target="_blank" rel="noopener noreferrer" class="mt-16 inline-block text-4xl font-bold px-9 py-4 rounded-xl text-white bg-fuchsia-500 hover:bg-fuchsia-600 transition">Click to RSVP!</a>
       <div class="mt-16 grid grid-cols-2 gap-6">
         <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Submit YSWS</a>
         <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Join Slack</a>
