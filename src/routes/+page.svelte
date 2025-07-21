@@ -108,9 +108,15 @@
       <h2 class="text-3xl font-semibold mb-8">Guides</h2>
       <dl class="space-y-8">
         <div>
-          <dt class="font-semibold text-lg">Coming soon...</dt>
+          <dt class="font-semibold text-lg">SQLite with Python</dt>
           <dd class="mt-1 text-base">
-            Coming <a href="#" target="_blank" rel="noopener noreferrer" class="underline">soon</a>
+            Read this <a href="https://www.freecodecamp.org/news/sqlite-python-beginners-tutorial/" target="_blank" rel="noopener noreferrer" class="underline">article</a> I wrote
+          </dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-lg">Host a Flask app on Nest</dt>
+          <dd class="mt-1 text-base">
+            Take a look at this <a href="https://github.com/eesazahed/flask-movies/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="underline">guide</a> I made
           </dd>
         </div>
       </dl>
