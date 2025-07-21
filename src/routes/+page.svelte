@@ -83,7 +83,7 @@
           </dd>
         </div>
         <div>
-          <dt class="font-semibold text-lg">I don"t have any good project ideas!</dt>
+          <dt class="font-semibold text-lg">I don't have any good project ideas!</dt>
           <dd class="mt-1 text-base">
             Think about your interests or hobbies. If you like gaming, make a site about of some of the video games you like. If you"re into reading, make a site where users can post book reviews. The list goes on...
           </dd>
