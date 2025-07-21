@@ -53,7 +53,7 @@
     </div>
   </header>
 
-  <main class="max-w-4xl md:mt-24 mx-auto px-16 py-16 bg-white rounded-3xl">
+  <main class="max-w-4xl md:mt-24 mx-auto px-16 py-16 bg-white border-3 border-green-300 rounded-3xl">
     <section class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-10 text-center">
       <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl">
         <h2 class="text-3xl font-semibold mb-4">You Ship</h2>
