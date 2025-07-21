@@ -40,7 +40,7 @@
     <div class="p-12 bg-green-100 border border-5 border-green-300 rounded-xl">
       <h2 class="text-3xl font-semibold mb-4">You Ship</h2>
       <p class="mb-2 text-base font-medium">A Flask web app with at least 3 routes. Host it on Nest.</p>
-      <p class="text-sm">(don"t worry I"ll make some tutorials)</p>
+      <p class="text-sm">(don't worry I'll make some tutorials)</p>
     </div>
     <div class="p-12 bg-green-100 border border-5 border-green-300 rounded-xl">
       <h2 class="text-3xl font-semibold mb-4">We Ship</h2>
@@ -63,8 +63,8 @@
       <ul class="list-disc list-inside mt-6  space-y-3 text-base">
       <li>You must be in high school or middle school</li>
       <li>You started working on this project recently. No submitting old projects.</li>
-      <li>You haven"t gotten a Slushies grant before. If you have, maybe try some other <a href="https://ysws.hackclub.com" target="_blank" rel="noopener noreferrer" class="underline">YSWS</a></li>
-      <li>This is a beginner YSWS, I don"t want to see any AI made projects</li>
+      <li>You haven't gotten a Slushies grant before. If you have, maybe try some other <a href="https://ysws.hackclub.com" target="_blank" rel="noopener noreferrer" class="underline">YSWS</a></li>
+      <li>This is a beginner YSWS, I don't want to see any AI made projects</li>
       <li>If you do use AI a bit for inspiration/debugging, make sure to include it in your README</li>
     </ul>
   </section>
@@ -81,7 +81,7 @@
       <div>
         <dt class="font-semibold text-lg">I don"t have any good project ideas!</dt>
         <dd class="mt-1 text-base">
-          Well neither do I, buddy. Just kidding. Think about your interests or hobbies. If you like gaming, make a site about of some of the video games you like. If you"re into reading, make a site where users can post book reviews. The list goes on...
+          Think about your interests or hobbies. If you like gaming, make a site about of some of the video games you like. If you"re into reading, make a site where users can post book reviews. The list goes on...
         </dd>
       </div>
       <div>
