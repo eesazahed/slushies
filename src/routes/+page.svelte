@@ -1,3 +1,5 @@
+<title>Slushies, a Flask YSWS!</title>
+
 <main class="max-w-5xl mx-auto px-6 py-12">
   <header class="mb-16 text-center">
     <h1 class="text-5xl font-bold mb-4">Slushies</h1>
@@ -38,8 +40,14 @@
       <li>Host the app on Nest (deployment tutorial provided)</li>
       <li>Implement basic CRUD functionality using SQLite, CSV, Postgres, or similar for higher rewards</li>
       <li>Your project should be functional, somewhat styled, and easy to use</li>
+    </ul>
+    <p class="text-xl font-semibold mt-12 m-6">Additionally, please note that:</p>
+      <ul class="list-disc list-inside m-6  space-y-3 text-base">
+      <li>You must be in high school or middle school</li>
+      <li>You started working on this project recently. No submitting old projects.</li>
+      <li>You haven't gotten a Slushies grant before. If you have, maybe try some other <a href="https://ysws.hackclub.com" target="_blank" rel="noopener noreferrer" class="underline">YSWS</a></li>
       <li>This is a beginner YSWS, I don't want to see any AI made projects</li>
-      <li>If you do use AI a bit for debugging, make sure to include it in your README</li>
+      <li>If you do use AI a bit for inspiration/debugging, make sure to include it in your README</li>
     </ul>
   </section>
 
@@ -47,33 +55,21 @@
     <h2 class="text-3xl font-semibold mb-8 border-b pb-2">Frequently Asked Questions</h2>
     <dl class="space-y-8">
       <div>
-        <dt class="font-semibold text-lg">What is Slushies?</dt>
-        <dd class="mt-1 text-base">
-          Slushies is a YSWS program focused on building Flask web apps, encouraging you to ship projects and get rewarded.
-        </dd>
-      </div>
-      <div>
-        <dt class="font-semibold text-lg">Who can participate?</dt>
-        <dd class="mt-1 text-base">
-          Anyone interested in building Flask apps and willing to ship a project hosted on Nest.
-        </dd>
-      </div>
-      <div>
-        <dt class="font-semibold text-lg">What kind of rewards can I get?</dt>
-        <dd class="mt-1 text-base">
-          $5 for food vendors or $10 if your project implements CRUD functionality.
-        </dd>
-      </div>
-      <div>
         <dt class="font-semibold text-lg">Where can I ask for help?</dt>
         <dd class="mt-1 text-base">
-          Join <a href="https://hackclub.slack.com" target="_blank" rel="noopener noreferrer" class="underline">#ysws on Hack Club Slack</a> or email <a href="mailto:eesa@hackclub.app" class="underline">eesa@hackclub.app</a>.
+          Join <a href="https://hackclub.slack.com" target="_blank" rel="noopener noreferrer" class="underline">#slushies</a> on Hack Club Slack or email <a href="mailto:eesa@hackclub.app" class="underline">eesa@hackclub.app</a>
+        </dd>
+      </div>
+      <div>
+        <dt class="font-semibold text-lg">I don't have any good project ideas!</dt>
+        <dd class="mt-1 text-base">
+          Well neither do I, buddy. Just kidding. Think about your interests or hobbies. If you like gaming, make a site about of some of the video games you like. If you're into reading, make a site where users can post book reviews. The list goes on...
         </dd>
       </div>
       <div>
         <dt class="font-semibold text-lg">Are there example projects?</dt>
         <dd class="mt-1 text-base">
-          Yes, check out an example Flask project with CRUD on <a href="https://github.com/eesazahed/flask-movies" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>.
+          I made a demo Flask project with CRUD on <a href="https://github.com/eesazahed/flask-movies" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>
         </dd>
       </div>
     </dl>
@@ -81,8 +77,8 @@
 
   <footer class="border-t pt-8 text-sm text-center text-gray-600">
     <p>
-      Questions? Join <a href="https://hackclub.slack.com" target="_blank" rel="noopener noreferrer" class="underline">#ysws on Hack Club Slack</a> or email 
-      <a href="mailto:eesa@hackclub.app" class="underline">eesa@hackclub.app</a>.
+      Questions? Join <a href="https://hackclub.slack.com" target="_blank" rel="noopener noreferrer" class="underline">#slushies</a> on Hack Club Slack or email 
+      <a href="mailto:eesa@hackclub.app" class="underline">eesa@hackclub.app</a>
     </p>
   </footer>
 </main>
