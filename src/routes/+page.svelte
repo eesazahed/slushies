@@ -53,19 +53,20 @@
     </div>
   </header>
 
-  <main class="max-w-4xl md:mt-24 mx-auto px-16 py-16 bg-white border-3 border-green-300 rounded-3xl">
+  <main class="max-w-4xl md:mt-24 mx-auto px-16 py-16 bg-white md:border-3 md:border-green-300 md:rounded-3xl">
     <section class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-10 text-center">
-      <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl">
+      <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105">
         <h2 class="text-3xl font-semibold mb-4">You Ship</h2>
         <p class="mb-2 text-base font-medium">A Flask web app with at least 3 routes. Host it on Nest.</p>
         <p class="text-sm">(don't worry I'll make some tutorials)</p>
       </div>
-      <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl">
+      <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105">
         <h2 class="text-3xl font-semibold mb-4">We Ship</h2>
         <p class="mb-2 text-base font-medium">$5 reward for food vendors</p>
         <p class="text-sm">(Get $10 if you implement CRUD with SQLite, CSV, Postgres, or similar)</p>
       </div>
     </section>
+    
 
     <section class="pt-8 mb-16 max-w-3xl mx-auto" id="requirements">
       <h2 class="text-3xl font-semibold mb-8">Requirements</h2>
