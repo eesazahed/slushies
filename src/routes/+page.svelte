@@ -41,8 +41,12 @@
       <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
       <!-- svelte-ignore a11y_click_events_have_key_events -->
       <h1 on:click={toggleHeaderBg} class="cursor-pointer text-6xl md:text-8xl font-bold mb-8">Slushies</h1>
-      <h2 class="text-4xl font-bold mb-8">A Flask YSWS</h2>
-      <p class="text-lg max-w-3xl mx-auto font-bold">Build something cool with Flask, ship your project, and get rewarded!</p>
+      <h2 class="text-4xl font-bold mb-8 italic">
+        A 
+        <a href="https://flask.palletsprojects.com/en/stable/quickstart/" target="_blank" rel="noopener noreferrer" class="underline">Flask</a>
+        YSWS
+      </h2>
+      <p class="text-lg max-w-3xl mx-auto font-semibold">Build something cool with Flask, ship your project, and get rewarded!</p>
       <a href="https://forms.fillout.com/t/8rVxgL1yHCus" target="_blank" rel="noopener noreferrer" class="pulse mt-16 inline-block text-4xl font-bold px-12 py-8 rounded-3xl text-white bg-sky-400 hover:bg-sky-600 transition">Click to RSVP!</a>
       <!-- <div class="mt-16 grid grid-cols-2 gap-6">
         <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Submit YSWS</a>
