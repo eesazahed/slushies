@@ -63,7 +63,7 @@
       <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105">
         <h2 class="text-3xl font-semibold mb-4">We Ship</h2>
         <p class="mb-2 text-base font-medium">$5 reward for food vendors</p>
-        <p class="text-sm">(Get $10 if you implement CRUD with SQLite, CSV, Postgres, or similar)</p>
+        <p class="text-sm">(Get $10 if you implement CRUD with SQLite, CSV, Postgres, etc.)</p>
       </div>
     </section>
     
