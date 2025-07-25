@@ -6,7 +6,7 @@ Here's how to get started with Flask. This assumes we have [Python](https://www.
 
 First, create an empty directory for your code and open a terminal.
 
-<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/vscode.png" width="300"><br />
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/vscode.png" width="500"><br />
 
 Create a new file called `requirements.txt` and in that file, write: `flask`
 
@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
 ### Routes
 
-The next step is to write a route. This is what we will need to eventually display HTML in the browser. Below `app = Flask(__name__)`, write:
+The next step is to write a route. This is what we'll need to display HTML in the browser. Below `app = Flask(__name__)`, write:
 
 ```
 @app.route('/')
@@ -47,13 +47,13 @@ Press CTRL+C to quit
 
 Going to http://127.0.0.1:5000 results in seeing a page stating: _"TemplateNotFound... jinja2.exceptions.TemplateNotFound: index.html"_
 
-[insert templatenotfound.png]
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/templatenotfound.png" width="500"><br />
 
 This is expected, as we haven't provided an index.html template for Flask to render. In the current directory we're working in, create a new folder called `templates` and there create a new HTML file called `index.html`.
 
 The current file structure should be:
 
-[insert files.png]
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/files.png" width="500"><br />
 
 Then write some basic HTML in this new file:
 
@@ -71,7 +71,7 @@ Then write some basic HTML in this new file:
 
 Save all the files and run `python3 app.py` in the terminal. Now, when we go to http://127.0.0.1:5000 we should see _"hi my name is eesa"_.
 
-Now here's something cool about Flask. we can pass Python variables into the HTML with [Jinja](https://jinja.palletsprojects.com/en/stable/nativetypes/#examples) templating.
+Now here's something cool about Flask. We can pass Python variables into the HTML with [Jinja](https://jinja.palletsprojects.com/en/stable/nativetypes/#examples) templating.
 
 In my `index.html` file, edit the &lt;p&gt; tag to instead display:
 
@@ -79,7 +79,7 @@ In my `index.html` file, edit the &lt;p&gt; tag to instead display:
 <p>hi my name is {{ user_name }}</p>
 ```
 
-Then go to `app.py` file and edit the `index()`, initializing a new `user_name` variable above the return statement:
+Then go to the `app.py` file and edit the `index()`, initializing a new `user_name` variable above the return statement:
 
 ```
 @app.route('/')
@@ -88,7 +88,7 @@ def index():
     return render_template('index.html')
 ```
 
-To include this variable when rendering the HTML, just include it in the `render_template()` function like:
+To pass this variable when rendering the HTML, include it in the `render_template()` function like:
 
 ```
 return render_template('index.html', user_name=user_name)
@@ -124,7 +124,7 @@ Notice how we named the new function `testing()`? It's important to make sure th
 
 ### Templates
 
-What if we want more html templates for more routes? As the site gets bigger, a great way to make this easier to manage is by creating a base template. In the templates directory, create a new file called `base.html`. Within this new file, proceed to write:
+What if we want more HTML templates for additional routes? As the site gets bigger, a great way to make this easier to manage is by creating a base template. In the templates directory, create a new file called `base.html`. In this file, write:
 
 ```
 <!DOCTYPE html>
@@ -178,13 +178,13 @@ to
 return render_template('testing.html', user_name=user_name)
 ```
 
-Now, taking a look at http://127.0.0.1:5000/testing, we should see _"hi, TESTING, this is the testing site"_
+Now go to http://127.0.0.1:5000/testing, we should see _"hi, TESTING, this is the testing site"_
 
 ### Adding CSS
 
-To add CSS, create a new empty directory called `static`, and there create a new file called`main.css`. The current file structure of the project should be:
+To add CSS, create a new empty directory called `static`, and there create a new file called `main.css`. The current file structure of the project should be:
 
-[insert files2.png]
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/files2.png" width="500"><br />
 
 We can change the project's font in `main.css` by writing:
 
@@ -206,10 +206,10 @@ However, the HTML files won't be able to use this CSS until we add this line to 
 </head>
 ```
 
-Now if we go to http://127.0.0.1:5000/ we should see the styles in `main.css` properly reflected on the HTML page like so:
+Now if we go to http://127.0.0.1:5000/ we should see the styles in `main.css` properly applied to the HTML page:
 
-[insert html.png]
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/html.png" width="500"><br />
 
 ### That's it for now!
 
-And that concludes our tutorial! For a more in-depth tutorial, I highly recommend we watch [Harvard's CS50x's Flask lesson](https://cs50.harvard.edu/x/weeks/9/).
+And that concludes our tutorial! For a more in-depth tutorial, I highly recommend watching [Harvard's CS50x's Flask lesson](https://cs50.harvard.edu/x/weeks/9/).
