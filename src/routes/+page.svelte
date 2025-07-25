@@ -76,7 +76,7 @@
       <h2 class="text-3xl font-semibold mb-8">Requirements</h2>
       <ul class="list-disc list-inside space-y-3 text-base">
         <li>Build a Flask web app with at least 3 routes</li>
-        <li>Your project should be functional, somewhat styled, and easy to use</li>
+        <li>Your project should be unique, functional, somewhat styled, and easy to use</li>
         <li>While coding, commit your work at least once an hour on GitHub</li>
         <li>Describe your project in a README.md file and include some screenshots</li>
         <li>Log at least 2 hours on <a href="https://hackatime.hackclub.com/" target="_blank" rel="noopener noreferrer" class="underline">Hackatime</a></li>
@@ -85,13 +85,15 @@
       <p class="text-xl font-semibold mt-12">For higher rewards ($10), log a minimum of 4 hours on Hackatime and implement at least one:</p>
         <ul class="list-disc list-inside mt-6  space-y-3 text-base">
         <li>Basic CRUD functionality using SQLite, CSV, Postgres, or something similar</li>
-        <li>Connect and successfully fetch data from an external API (weather, stocks, etc...)</li>
+        <li>A working user authentication system and protected routes</li>
+        <li>Connect and successfully fetch data from an external API (weather, stocks, etc.)</li>
         <li>Aesthetically pleasing responsive layout that works on mobile and desktop</li>
       </ul>
       <p class="text-xl font-semibold mt-12">Additionally, please note that:</p>
         <ul class="list-disc list-inside mt-6  space-y-3 text-base">
         <li>You must be in high school or middle school</li>
-        <li>You started working on this project recently. Your first commit must be after this YSWS was announced.</li>
+        <li>You started working on this project recently</li>
+        <li>Your first commit must be made after this YSWS was announced</li>
         <li>You haven't gotten a Slushies grant before. If you have, maybe try some other <a href="https://ysws.hackclub.com" target="_blank" rel="noopener noreferrer" class="underline">YSWS</a></li>
         <li>This is a beginner YSWS, I don't want to see any AI made projects</li>
         <li>If you do use AI a bit for inspiration/debugging, make sure to include it in your README</li>
@@ -116,7 +118,9 @@
         <div>
           <dt class="font-semibold text-lg">Are there example projects?</dt>
           <dd class="mt-1 text-base">
-            I made a demo Flask project with CRUD on <a href="https://github.com/eesazahed/flask-movies" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>. Here is a slightly more advanced <a href="https://github.com/eesazahed/flask-auth" target="_blank" rel="noopener noreferrer" class="underline">one</a> with basic user authentication.
+            I made a demo Flask project with CRUD on <a href="https://github.com/eesazahed/flask-movies" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>.
+            <br />
+            Here is a slightly more advanced <a href="https://github.com/eesazahed/flask-auth" target="_blank" rel="noopener noreferrer" class="underline">project</a> with basic user authentication.
           </dd>
         </div>        
         <div>
@@ -128,7 +132,7 @@
         <div>
           <dt class="font-semibold text-lg">Can I "double dip" with another YSWS?</dt>
           <dd class="mt-1 text-base">
-            Unfortunately, this is not possible for Slushies
+            Unfortunately, this is not possible :(
           </dd>
         </div>
       </dl>
@@ -140,7 +144,7 @@
         <div>
           <dt class="font-semibold text-lg">Getting started with Flask</dt>
           <dd class="mt-1 text-base">
-            See how to make a simple Flask app <a href="https://www.freecodecamp.org/news/sqlite-python-beginners-tutorial/" target="_blank" rel="noopener noreferrer" class="underline">here</a>
+            See how to make a simple Flask app <a href="https://github.com/eesazahed/slushies/blob/main/TUTORIAL.md" target="_blank" rel="noopener noreferrer" class="underline">here</a>
           </dd>
         </div>
         <div>
