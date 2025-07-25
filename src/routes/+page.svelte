@@ -110,7 +110,7 @@
         <div>
           <dt class="font-semibold text-lg">Are there example projects?</dt>
           <dd class="mt-1 text-base">
-            I made a demo Flask project with CRUD on <a href="https://github.com/eesazahed/flask-movies" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>. Here is another <a href="https://github.com/eesazahed/flask-auth" target="_blank" rel="noopener noreferrer" class="underline">one</a>
+            I made a demo Flask project with CRUD on <a href="https://github.com/eesazahed/flask-movies" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>. Here is a slightly more advanced <a href="https://github.com/eesazahed/flask-auth" target="_blank" rel="noopener noreferrer" class="underline">one</a>.
           </dd>
         </div>        
         <div>
