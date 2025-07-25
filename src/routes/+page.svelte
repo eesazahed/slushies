@@ -66,8 +66,8 @@
       </div>
       <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105">
         <h2 class="text-3xl font-semibold mb-4">We Ship</h2>
-        <p class="mb-2 text-base font-medium">$5 reward for food vendors</p>
-        <p class="text-sm">(Get $10 if you implement CRUD with SQLite, CSV, Postgres, etc.)</p>
+        <p class="mb-2 text-base font-medium">$5 to get a slushie</p>
+        <p class="text-sm">(see how to earn $10 to get a slushie for you + a friend!)</p>
       </div>
     </section>
     
@@ -76,11 +76,18 @@
       <h2 class="text-3xl font-semibold mb-8">Requirements</h2>
       <ul class="list-disc list-inside space-y-3 text-base">
         <li>Build a Flask web app with at least 3 routes</li>
-        <li>Commit your code frequently on GitHub</li>
+        <li>While coding, commit your work at least once an hour on GitHub</li>
         <li>Describe your project in a README.md file and include some screenshots</li>
         <li>Host the app on Nest (deployment tutorial provided)</li>
         <li>Implement basic CRUD functionality using SQLite, CSV, Postgres, or similar for higher rewards</li>
+        <li>Alternativly, </li>
         <li>Your project should be functional, somewhat styled, and easy to use</li>
+      </ul>
+      <p class="text-xl font-semibold mt-12">For higher rewards ($10), implement at least one:</p>
+        <ul class="list-disc list-inside mt-6  space-y-3 text-base">
+        <li>Basic CRUD functionality using SQLite, CSV, Postgres, or something similar</li>
+        <li>Connect and successfully fetch data from an external API (weather, stocks, etc...)</li>
+        <li>Aesthetically pleasing responsive layout that works on mobile and desktop</li>
       </ul>
       <p class="text-xl font-semibold mt-12">Additionally, please note that:</p>
         <ul class="list-disc list-inside mt-6  space-y-3 text-base">
@@ -116,7 +123,7 @@
         <div>
           <dt class="font-semibold text-lg">Is there a deadline?</dt>
           <dd class="mt-1 text-base">
-            It is to be determined
+            Saturday, <b>August 23, 2025</b> at 12:00 AM (midnight) Central Daylight Time
         </dd>
         </div>
       </dl>
