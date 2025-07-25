@@ -1,22 +1,18 @@
 # Getting started with Flask
 
-Here's how to get started with Flask. This assumes you have [Python](https://www.python.org/downloads/) installed and working on your machine.
+Here's how to get started with Flask. This assumes we have [Python](https://www.python.org/downloads/) installed and working on your machine.
 
 ### Setup
 
-Create an empty directory to code in and have your terminal ready.
+First, create an empty directory for your code and open a terminal.
 
 <img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/vscode.png" width="300"><br />
 
-Create a new file called `requirements.txt` and in that file simply write: `flask`
+Create a new file called `requirements.txt` and in that file, write: `flask`
 
 In the terminal, run `pip install -r requirements.txt`. If that doesn't work, try `pip3 install -r requirements.txt`
 
-Create a new file called `app.py`. The current file structure of the project should be:
-
-[inesrt files.png]
-
-Within this file, proceed to write the following:
+Create a new file called `app.py`. Within this file, proceed to write the following:
 
 ```
 from flask import Flask, render_template
@@ -37,7 +33,7 @@ def index():
     return render_template('index.html')
 ```
 
-If you go into the terminal and run `python3 app.py`, you should see:
+If we go into the terminal and run `python3 app.py`, we should see:
 
 ```
 * Serving Flask app 'app'
@@ -53,13 +49,13 @@ Going to http://127.0.0.1:5000 results in seeing a page stating: _"TemplateNotFo
 
 [insert templatenotfound.png]
 
-This is expected, as we haven't provided an index.html template for Flask to render. In the current directory you're working in, create a new folder called `templates` and there create a new HTML file called `index.html`.
+This is expected, as we haven't provided an index.html template for Flask to render. In the current directory we're working in, create a new folder called `templates` and there create a new HTML file called `index.html`.
 
-Your current file structure should be:
+The current file structure should be:
 
 [insert files.png]
 
-I'll then write some basic HTML in this new file:
+Then write some basic HTML in this new file:
 
 ```
 <!DOCTYPE html>
@@ -73,15 +69,17 @@ I'll then write some basic HTML in this new file:
 </html>
 ```
 
-I saved my file and ran `python3 app.py` in the terminal. Now, when I go to http://127.0.0.1:5000 I see _"hi my name is eesa"_.
+Save all the files and run `python3 app.py` in the terminal. Now, when we go to http://127.0.0.1:5000 we should see _"hi my name is eesa"_.
 
-Now here's something cool about Flask. I can pass Python variables into the HTML with this really cool method called [Jinja](https://jinja.palletsprojects.com/en/stable/nativetypes/#examples) templateing.
+Now here's something cool about Flask. we can pass Python variables into the HTML with [Jinja](https://jinja.palletsprojects.com/en/stable/nativetypes/#examples) templating.
 
-In my `index.html` file, I'll edit the <p> tag to instead display:
+In my `index.html` file, edit the &lt;p&gt; tag to instead display:
 
+```
 <p>hi my name is {{ user_name }}</p>
+```
 
-I'll then go to `app.py` file and edit the `index()` function to include a new variable, `user_name`, like so:
+Then go to `app.py` file and edit the `index()`, initializing a new `user_name` variable above the return statement:
 
 ```
 @app.route('/')
@@ -90,15 +88,15 @@ def index():
     return render_template('index.html')
 ```
 
-To include this variable when rendering the HTML, I'll just include it in the `render_template()` function like so:
+To include this variable when rendering the HTML, just include it in the `render_template()` function like:
 
 ```
 return render_template('index.html', user_name=user_name)
 ```
 
-After reloading the site in the browser, I now see _"hi my name is EESAAAAAA"_
+After reloading the site in the browser, we should now see _"hi my name is EESAAAAAA"_
 
-I can add another route by adding it below the `index()` function:
+We can add another route by adding it below the `index()` function:
 
 ```
 from flask import Flask, render_template
@@ -122,11 +120,11 @@ if __name__ == '__main__':
     app.run(port=5000, debug=True)
 ```
 
-Notice how I named the new function `testing()`? It's important to make sure that all the routes have unique function names. With that being said, I can now go to http://127.0.0.1:5000/testing and see _"hi my name is TESTING"_.
+Notice how we named the new function `testing()`? It's important to make sure that all the routes have unique function names. With that being said, we can now go to http://127.0.0.1:5000/testing and see _"hi my name is TESTING"_.
 
 ### Templates
 
-What if I want more html templates for more routes? As the site gets bigger, a great way to make this easier to manage is by creating a base template. In the templates directory, create a new file called `base.html`. Within this new file, proceed to write:
+What if we want more html templates for more routes? As the site gets bigger, a great way to make this easier to manage is by creating a base template. In the templates directory, create a new file called `base.html`. Within this new file, proceed to write:
 
 ```
 <!DOCTYPE html>
@@ -140,7 +138,7 @@ What if I want more html templates for more routes? As the site gets bigger, a g
 </html>
 ```
 
-I'll then edit `index.html` to now become:
+Then edit `index.html` to now become:
 
 ```
 {% extends "base.html" %}
@@ -154,7 +152,7 @@ Hi!
 {% endblock %}
 ```
 
-I'll make another HTML template called `testing.html` in the same directory, with the content being:
+Make another HTML template called `testing.html` in the same directory, with the content being:
 
 ```
 {% extends "base.html" %}
@@ -168,7 +166,7 @@ Testing!
 {% endblock %}
 ```
 
-Now, I'll go back to `app.py` and make the following change from
+Now, go back to `app.py` and make the following change from
 
 ```
 return render_template('index.html', user_name=user_name)
@@ -180,11 +178,11 @@ to
 return render_template('testing.html', user_name=user_name)
 ```
 
-Now, taking a look at http://127.0.0.1:5000/testing, I see _"hi, TESTING, this is the testing site"_
+Now, taking a look at http://127.0.0.1:5000/testing, we should see _"hi, TESTING, this is the testing site"_
 
 ### Adding CSS
 
-To add CSS, I'll create a new empty directory called `static`, and there I'll create a new file called`main.css`. The current file structure of the project should be:
+To add CSS, create a new empty directory called `static`, and there create a new file called`main.css`. The current file structure of the project should be:
 
 [insert files2.png]
 
@@ -208,10 +206,10 @@ However, the HTML files won't be able to use this CSS until we add this line to 
 </head>
 ```
 
-Now if I go to http://127.0.0.1:5000/ I should see the styles in `main.css` properly reflected on the HTML page like so:
+Now if we go to http://127.0.0.1:5000/ we should see the styles in `main.css` properly reflected on the HTML page like so:
 
 [insert html.png]
 
 ### That's it for now!
 
-And that concludes our tutorial! For a more in-depth tutorial, I hihgly recommend you to watch [Harvard's CS50x's Flask lesson](https://cs50.harvard.edu/x/weeks/9/).
+And that concludes our tutorial! For a more in-depth tutorial, I highly recommend we watch [Harvard's CS50x's Flask lesson](https://cs50.harvard.edu/x/weeks/9/).
