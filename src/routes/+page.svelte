@@ -43,7 +43,7 @@
       <h1 on:click={toggleHeaderBg} class="cursor-pointer text-6xl md:text-8xl font-bold mb-8">Slushies</h1>
       <h2 class="text-4xl font-bold mb-8 italic">
         A 
-        <a href="https://flask.palletsprojects.com/en/stable/quickstart/" target="_blank" rel="noopener noreferrer" class="underline">Flask</a>
+        <a href="https://flask.palletsprojects.com/en/stable/" target="_blank" rel="noopener noreferrer" class="underline">Flask</a>
         YSWS
       </h2>
       <p class="text-lg max-w-3xl mx-auto font-semibold">Build something cool with Flask, ship your project, and get rewarded!</p>
@@ -66,8 +66,8 @@
       </div>
       <div class="p-12 bg-sky-100 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105">
         <h2 class="text-3xl font-semibold mb-4">We Ship</h2>
-        <p class="mb-2 text-base font-medium">$5 to get a slushie</p>
-        <p class="text-sm">(see how to earn $10 to get a slushie for you + a friend!)</p>
+        <p class="mb-2 text-base font-medium">$5 for a slushie</p>
+        <p class="text-sm">(see how to earn $10 below!)</p>
       </div>
     </section>
     
@@ -76,14 +76,13 @@
       <h2 class="text-3xl font-semibold mb-8">Requirements</h2>
       <ul class="list-disc list-inside space-y-3 text-base">
         <li>Build a Flask web app with at least 3 routes</li>
+        <li>Your project should be functional, somewhat styled, and easy to use</li>
         <li>While coding, commit your work at least once an hour on GitHub</li>
         <li>Describe your project in a README.md file and include some screenshots</li>
-        <li>Host the app on Nest (deployment tutorial provided)</li>
-        <li>Implement basic CRUD functionality using SQLite, CSV, Postgres, or similar for higher rewards</li>
-        <li>Alternativly, </li>
-        <li>Your project should be functional, somewhat styled, and easy to use</li>
+        <li>Log at least 2 hours on <a href="https://hackatime.hackclub.com/" target="_blank" rel="noopener noreferrer" class="underline">Hackatime</a></li>
+        <li>Host the app on <a href="https://hackclub.app/" target="_blank" rel="noopener noreferrer" class="underline">Nest</a> (deployment tutorial provide below)</li>
       </ul>
-      <p class="text-xl font-semibold mt-12">For higher rewards ($10), implement at least one:</p>
+      <p class="text-xl font-semibold mt-12">For higher rewards ($10), log a minimum of 4 hours on Hackatime and implement at least one:</p>
         <ul class="list-disc list-inside mt-6  space-y-3 text-base">
         <li>Basic CRUD functionality using SQLite, CSV, Postgres, or something similar</li>
         <li>Connect and successfully fetch data from an external API (weather, stocks, etc...)</li>
@@ -92,7 +91,7 @@
       <p class="text-xl font-semibold mt-12">Additionally, please note that:</p>
         <ul class="list-disc list-inside mt-6  space-y-3 text-base">
         <li>You must be in high school or middle school</li>
-        <li>You started working on this project recently. No submitting old projects.</li>
+        <li>You started working on this project recently. Your first commit must be after this YSWS was announced.</li>
         <li>You haven't gotten a Slushies grant before. If you have, maybe try some other <a href="https://ysws.hackclub.com" target="_blank" rel="noopener noreferrer" class="underline">YSWS</a></li>
         <li>This is a beginner YSWS, I don't want to see any AI made projects</li>
         <li>If you do use AI a bit for inspiration/debugging, make sure to include it in your README</li>
@@ -111,13 +110,13 @@
         <div>
           <dt class="font-semibold text-lg">I don't have any good project ideas!</dt>
           <dd class="mt-1 text-base">
-            Think about your interests or hobbies. If you like gaming, make a site about of some of the video games you like. If you're into reading, make a site where users can post book reviews. The list goes on...
+            Think about your interests or hobbies. If you like gaming, make a site about of some of the video games you like. If you're into reading, make a site where users can post book reviews, and etc.
           </dd>
         </div>
         <div>
           <dt class="font-semibold text-lg">Are there example projects?</dt>
           <dd class="mt-1 text-base">
-            I made a demo Flask project with CRUD on <a href="https://github.com/eesazahed/flask-movies" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>. Here is a slightly more advanced <a href="https://github.com/eesazahed/flask-auth" target="_blank" rel="noopener noreferrer" class="underline">one</a>.
+            I made a demo Flask project with CRUD on <a href="https://github.com/eesazahed/flask-movies" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>. Here is a slightly more advanced <a href="https://github.com/eesazahed/flask-auth" target="_blank" rel="noopener noreferrer" class="underline">one</a> with basic user authentication.
           </dd>
         </div>        
         <div>
@@ -126,6 +125,12 @@
             Saturday, <b>August 23, 2025</b> at 12:00 AM (midnight) Central Daylight Time
         </dd>
         </div>
+        <div>
+          <dt class="font-semibold text-lg">Can I "double dip" with another YSWS?</dt>
+          <dd class="mt-1 text-base">
+            Unfortunately, this is not possible for Slushies
+          </dd>
+        </div>
       </dl>
     </section>
 
@@ -133,15 +138,21 @@
       <h2 class="text-3xl font-semibold mb-8">Guides</h2>
       <dl class="space-y-8">
         <div>
+          <dt class="font-semibold text-lg">Getting started with Flask</dt>
+          <dd class="mt-1 text-base">
+            See how to make a simple Flask app <a href="https://www.freecodecamp.org/news/sqlite-python-beginners-tutorial/" target="_blank" rel="noopener noreferrer" class="underline">here</a>
+          </dd>
+        </div>
+        <div>
           <dt class="font-semibold text-lg">SQLite with Python</dt>
           <dd class="mt-1 text-base">
-            Read this <a href="https://www.freecodecamp.org/news/sqlite-python-beginners-tutorial/" target="_blank" rel="noopener noreferrer" class="underline">article</a> I wrote
+            Learn how to perform basic CRUD (create, read, update, delete) operations <a href="https://www.freecodecamp.org/news/sqlite-python-beginners-tutorial/" target="_blank" rel="noopener noreferrer" class="underline">here</a>
           </dd>
         </div>
         <div>
           <dt class="font-semibold text-lg">Host a Flask app on Nest</dt>
           <dd class="mt-1 text-base">
-            Take a look at this <a href="https://github.com/eesazahed/flask-movies/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="underline">guide</a> I made
+            This part can be a bit tricky, so take a look at this <a href="https://github.com/eesazahed/flask-movies/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="underline">guide</a> I wrote
           </dd>
         </div>
       </dl>
