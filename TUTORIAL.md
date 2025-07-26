@@ -1,6 +1,6 @@
 # Getting started with Flask
 
-Here's how to get started with Flask. This assumes we have [Python](https://www.python.org/downloads/) installed and working on your machine.
+Here's how to get started with Flask. This assumes you have [Python](https://www.python.org/downloads/) installed and working on your machine.
 
 ### Setup
 
