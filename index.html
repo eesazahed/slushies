@@ -6,7 +6,7 @@
     <title>Slushies, a Flask YSWS!</title>
     <link
       rel="shortcut icon"
-      href="/assets/static/images/logo.png"
+      href="/assets/static/images/red-blue-slushy.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/assets/static/css/main.css" />
@@ -24,11 +24,18 @@
     <header
       class="relative p-8 min-h-96 text-center bg-gradient-to-b from-purple-700 to-green-200 md:to-green-300 flex flex-col items-center justify-center overflow-hidden"
     >
+      <a
+        href="/gallery.html"
+        class="absolute top-10 right-10 text-white text-2xl underline"
+      >
+        View Gallery
+      </a>
+
       <div class="text-white my-16">
         <img
           src="/assets/static/images/logo.png"
           alt="Slushies"
-          class="md:h-96 mb-16 md:mb-8 mx-auto"
+          class="pulse md:h-96 mb-16 md:mb-8 mx-auto"
         />
         <h2 class="text-4xl md:text-6xl font-bold mb-8 italic">
           A
@@ -41,7 +48,7 @@
           >
           YSWS
         </h2>
-        <p class="text-2xl md:text-3xl max-w-3xl mx-auto font-medium">
+        <p class="text-2xl md:text-3xl max-w-3xl mx-auto font-bold">
           Build something cool with Flask, ship your project, and get rewarded!
         </p>
         <div class="mt-16 grid grid-cols-2 gap-6">
@@ -83,21 +90,21 @@
           id="coding-card"
           class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
         >
-          <h2 class="text-4xl font-medium mb-4">You Ship</h2>
-          <p class="mb-2 text-xl font-medium">Your own Flask app on Nest!</p>
+          <h2 class="text-4xl font-bold mb-4">You Ship</h2>
+          <p class="mb-2 text-xl font-bold">Your own Flask app on Nest!</p>
         </div>
         <div
           id="slushies-card"
           class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
         >
-          <h2 class="text-4xl font-medium mb-4">We Ship</h2>
-          <p class="mb-2 text-lg font-medium">$5 for a slushie</p>
+          <h2 class="text-4xl font-bold mb-4">We Ship</h2>
+          <p class="mb-2 text-lg font-bold">$5 for a slushie</p>
           <p class="text-base">See how to earn $10 below</p>
         </div>
       </section>
 
       <section class="pt-8 mb-8 max-w-3xl mx-auto" id="requirements">
-        <h2 class="text-4xl font-medium mb-6">Requirements</h2>
+        <h2 class="text-4xl font-bold mb-6">Requirements</h2>
         <div class="flex bg">
           <ul class="list-disc list-inside mt-4 space-y-1 text-lg">
             <li>Build a Flask web app with at least 3 routes</li>
@@ -129,7 +136,10 @@
                 class="underline text-cyan-600 font-semibold"
                 >Nest</a
               >
-              (deployment tutorial provide below)
+              (deployment tutorial provide
+              <a href="#guides" class="underline text-cyan-600 font-semibold"
+                >below</a
+              >)
             </li>
           </ul>
           <img
@@ -139,7 +149,7 @@
           />
         </div>
 
-        <p class="text-xl font-medium mt-12">
+        <p class="text-xl font-bold mt-12">
           For higher rewards, log a minimum of 2 hours on Hackatime and
           implement at least one:
         </p>
@@ -157,10 +167,10 @@
             Aesthetically pleasing responsive layout that works on mobile and
             desktop
           </li>
-          <li>And you'll earn 🤑 $10 🤑</li>
+          <li>And you'll earn 🤑 $10 🤑 instead of $5</li>
         </ul>
 
-        <p class="text-xl font-medium mt-12">Additionally, please note that:</p>
+        <p class="text-xl font-bold mt-12">Additionally, please note that:</p>
         <ul class="list-disc list-inside mt-4 space-y-1 text-lg">
           <li>You must be in high school or middle school</li>
           <li>You started working on this project recently</li>
@@ -187,10 +197,10 @@
       </section>
 
       <section class="pt-8 mb-8 max-w-3xl mx-auto" id="faq">
-        <h2 class="text-4xl font-medium mb-6">Frequently Asked Questions</h2>
+        <h2 class="text-4xl font-bold mb-6">Frequently Asked Questions</h2>
         <dl class="space-y-6">
           <div>
-            <dt class="font-medium text-lg">Where can I ask for help?</dt>
+            <dt class="font-bold text-lg">Where can I ask for help?</dt>
             <dd class="mt-1 text-lg">
               Join
               <a
@@ -209,7 +219,7 @@
             </dd>
           </div>
           <div>
-            <dt class="font-medium text-lg">
+            <dt class="font-bold text-lg">
               I don't have any good project ideas!
             </dt>
             <dd class="mt-1 text-lg">
@@ -219,7 +229,7 @@
             </dd>
           </div>
           <div>
-            <dt class="font-medium text-lg">Are there example projects?</dt>
+            <dt class="font-bold text-lg">Are there example projects?</dt>
             <dd class="mt-1 text-lg">
               I made a demo Flask project with SQLite on
               <a
@@ -242,14 +252,14 @@
             </dd>
           </div>
           <div>
-            <dt class="font-medium text-lg">Is there a deadline?</dt>
+            <dt class="font-bold text-lg">Is there a deadline?</dt>
             <dd class="mt-1 text-lg">
               Saturday, <b>August 23, 2025</b> at 12:00 AM (midnight) Central
               Daylight Time
             </dd>
           </div>
           <div>
-            <dt class="font-medium text-lg">
+            <dt class="font-bold text-lg">
               Can I "double dip" with another YSWS?
             </dt>
             <dd class="mt-1 text-lg">Unfortunately, this is not possible :(</dd>
@@ -258,7 +268,7 @@
       </section>
 
       <section class="pt-8 mb-16 max-w-3xl mx-auto" id="guides">
-        <h2 class="text-4xl font-medium">Some useful guides!</h2>
+        <h2 class="text-4xl font-bold">Some useful guides!</h2>
 
         <section
           class="mt-10 mb-16 grid grid-cols-1 md:grid-cols-2 gap-10 text-center text-white"
@@ -270,7 +280,7 @@
             rel="noopener noreferrer"
             class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
           >
-            <h2 class="text-3xl font-medium">Getting started with Flask</h2>
+            <h2 class="text-3xl font-bold">Getting started with Flask</h2>
           </a>
           <a
             id="sqlite-card"
@@ -279,7 +289,7 @@
             rel="noopener noreferrer"
             class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
           >
-            <h2 class="text-3xl font-medium">Basic CRUD with SQLite</h2>
+            <h2 class="text-3xl font-bold">Basic CRUD with SQLite</h2>
           </a>
           <a
             id="nest-card"
@@ -288,7 +298,7 @@
             rel="noopener noreferrer"
             class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
           >
-            <h2 class="text-3xl font-medium">Hosting a Flask app on Nest</h2>
+            <h2 class="text-3xl font-bold">Hosting a Flask app on Nest</h2>
           </a>
           <a
             id="cs50-card"
@@ -297,7 +307,7 @@
             rel="noopener noreferrer"
             class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
           >
-            <h2 class="text-3xl font-medium">CS50x Week 9: Flask</h2>
+            <h2 class="text-3xl font-bold">CS50x Week 9: Flask</h2>
           </a>
         </section>
       </section>
@@ -322,6 +332,6 @@
       </footer>
     </main>
 
-    <script src="script.js"></script>
+    <script src="/assets/static/js/main.js"></script>
   </body>
 </html>

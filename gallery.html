@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slushies, a Flask YSWS!</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/static/images/red-blue-slushy.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/static/css/main.css" />
+    <link rel="preload" as="image" href="/assets/static/images/logo.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/static/images/red-blue-slushy.png"
+    />
+    <link rel="preload" as="image" href="/assets/static/images/coding.png" />
+    <link rel="preload" as="image" href="/assets/static/images/slushies.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="md:bg-green-300 md:pb-24">
+    <header
+      class="relative p-8 min-h-96 text-center bg-gradient-to-b from-purple-700 to-green-200 md:to-green-300 flex flex-col items-center justify-center overflow-hidden"
+    >
+      <a
+        href="/"
+        class="absolute top-10 right-10 text-white text-2xl underline"
+      >
+        View YSWS
+      </a>
+
+      <div class="text-white my-16">
+        <h2 class="text-4xl md:text-6xl font-bold mb-8 italic">Gallery</h2>
+        <p class="text-2xl md:text-3xl max-w-3xl mx-auto font-bold">
+          See what others have built!
+        </p>
+        <div class="mt-16 grid grid-cols-2 gap-6">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-9 py-4 rounded-3xl text-white text-2xl bg-cyan-600 hover:bg-cyan-500 transition"
+            >Submit YSWS</a
+          >
+          <a
+            href="https://app.slack.com/client/T0266FRGM/C097GP305G8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-9 py-4 rounded-3xl text-white text-2xl bg-cyan-600 hover:bg-cyan-500 transition"
+            >Join Slack</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="max-w-4xl mx-auto px-16 pb-16 md:pt-16 bg-green-200 md:border-3 md:border-green-400 md:rounded-3xl"
+    >
+      <section class="pt-8 mb-16 max-w-3xl mx-auto" id="guides">
+        <section
+          id="gallery"
+          class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-10 text-center text-white"
+        ></section>
+      </section>
+
+      <footer class="pt-8 text-base text-center text-gray-600">
+        <p>
+          Questions? Join
+          <a
+            href="https://app.slack.com/client/T0266FRGM/C097GP305G8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline text-cyan-600 font-semibold"
+            >#slushies</a
+          >
+          on Hack Club Slack or DM
+          <a
+            href="https://hackclub.slack.com/team/U074SFQFJMS"
+            class="underline text-cyan-600 font-semibold"
+            >@Eesa</a
+          >
+        </p>
+      </footer>
+    </main>
+
+    <script src="/assets/static/js/gallery.js"></script>
+  </body>
+</html>
