@@ -40,17 +40,21 @@
   }
 
   #coding-card {
-    background: url("images/coding.png") center/cover no-repeat;
+    background: url("/images/coding.png") center/cover no-repeat;
   }
 
   #slushies-card {
-    background: url("images/slushies.png") center/cover no-repeat;
+    background: url("/images/slushies.png") center/cover no-repeat;
   }
 </style>
 
 <svelte:head>
   <title>Slushies, a Flask YSWS!</title>
   <link rel="preload" as="image" href="/images/logo.png">
+  <link rel="preload" as="image" href="/images/red-blue-slushy.png">
+  <link rel="preload" as="image" href="/images/coding.png">
+  <link rel="preload" as="image" href="/images/slushies.png">
+
 </svelte:head>
 
 <div class="md:bg-green-300 md:pb-24">
