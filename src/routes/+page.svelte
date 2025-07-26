@@ -46,23 +46,42 @@
   #slushies-card {
     background: url("/images/slushies.png") center/cover no-repeat;
   }
+
+  #flask-card {
+    background: url("/images/flask.png") center/cover no-repeat;
+  }
+
+  #sqlite-card {
+    background: url("/images/sqlite.png") center/cover no-repeat;
+  }
+
+  #nest-card {
+    background: url("/images/nest.png") center/cover no-repeat;
+  }
+
+  #cs50-card {
+    background: url("/images/cs50.png") center/cover no-repeat;
+  }
 </style>
 
 <svelte:head>
-  <title>Slushies, a Flask YSWS!</title>
-  <link rel="preload" as="image" href="/images/logo.png">
-  <link rel="preload" as="image" href="/images/red-blue-slushy.png">
-  <link rel="preload" as="image" href="/images/coding.png">
-  <link rel="preload" as="image" href="/images/slushies.png">
-
-</svelte:head>
+    <title>Slushies, a Flask YSWS!</title>
+    <link rel="preload" as="image" href="/images/logo.png">
+    <link rel="preload" as="image" href="/images/red-blue-slushy.png">
+    <link rel="preload" as="image" href="/images/coding.png">
+    <link rel="preload" as="image" href="/images/slushies.png">
+  </svelte:head>
 
 <div class="md:bg-green-300 md:pb-24">
   <header
     class="relative p-8 min-h-96 text-center bg-gradient-to-b from-purple-700 to-green-200 md:to-green-300 flex flex-col items-center justify-center overflow-hidden"
   >
     <div class="text-white my-16">
-      <img src="/images/logo.png" alt="Slushies" class="md:h-108 mb-16 md:mb-8 mx-auto" />
+      <img
+        src="/images/logo.png"
+        alt="Slushies"
+        class="md:h-108 mb-16 md:mb-8 mx-auto"
+      />
       <h2 class="text-4xl md:text-6xl font-bold mb-8 italic">
         A
         <a
@@ -85,11 +104,11 @@
         >Click to RSVP!</a
       >
       <!-- <div class="mt-16 grid grid-cols-2 gap-6">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Submit YSWS</a>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Join Slack</a>
-          <a href="#requirements" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Requirements</a>
-          <a href="#faq" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">FAQ</a>
-        </div> -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Submit YSWS</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Join Slack</a>
+            <a href="#requirements" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">Requirements</a>
+            <a href="#faq" class="inline-block px-9 py-4 rounded-3xl text-white bg-cyan-600 hover:bg-cyan-500 transition">FAQ</a>
+          </div> -->
     </div>
   </header>
 
@@ -104,9 +123,7 @@
         class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
       >
         <h2 class="text-4xl font-medium mb-4">You Ship</h2>
-        <p class="mb-2 text-xl font-medium">
-          Your own Flask app on Nest!
-        </p>
+        <p class="mb-2 text-xl font-medium">Your own Flask app on Nest!</p>
       </div>
       <div
         id="slushies-card"
@@ -133,7 +150,7 @@
             Describe your project (and add screenshots) in a README.md file
           </li>
           <li>
-            Log at least 2 hours on
+            Log at least 1 hour on
             <a
               href="https://hackatime.hackclub.com/"
               target="_blank"
@@ -160,8 +177,9 @@
           class="w-32 ml-16 hidden md:block -mt-8"
         />
       </div>
+
       <p class="text-xl font-medium mt-12">
-        For higher rewards, log a minimum of 4 hours on Hackatime and implement
+        For higher rewards, log a minimum of 2 hours on Hackatime and implement
         at least one:
       </p>
       <ul class="list-disc list-inside mt-4 space-y-1 text-lg">
@@ -180,6 +198,7 @@
         </li>
         <li>And you'll earn 🤑 $10 🤑</li>
       </ul>
+
       <p class="text-xl font-medium mt-12">Additionally, please note that:</p>
       <ul class="list-disc list-inside mt-4 space-y-1 text-lg">
         <li>You must be in high school or middle school</li>
@@ -221,7 +240,9 @@
               >#slushies</a
             >
             on Hack Club Slack or email
-            <a href="mailto:eesa@hackclub.app" class="underline text-cyan-600 font-semibold"
+            <a
+              href="mailto:eesa@hackclub.app"
+              class="underline text-cyan-600 font-semibold"
               >eesa@hackclub.app</a
             >
           </dd>
@@ -275,51 +296,96 @@
       </dl>
     </section>
 
-    <section class="pt-8 mb-16 max-w-3xl mx-auto" id="faq">
-      <h2 class="text-4xl font-medium mb-6">Guides</h2>
-      <dl class="space-y-6">
-        <div>
-          <dt class="font-medium text-lg">Getting started with Flask</dt>
-          <dd class="mt-1 text-lg">
-            See how to make a simple Flask app
-            <a
-              href="https://github.com/eesazahed/slushies/blob/main/TUTORIAL.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="underline text-cyan-600 font-semibold"
-              >here</a
-            >
-          </dd>
-        </div>
-        <div>
-          <dt class="font-medium text-lg">SQLite with Python</dt>
-          <dd class="mt-1 text-lg">
-            Learn how to perform basic CRUD (create, read, update, delete)
-            operations
-            <a
-              href="https://www.freecodecamp.org/news/sqlite-python-beginners-tutorial/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="underline text-cyan-600 font-semibold"
-              >here</a
-            >
-          </dd>
-        </div>
-        <div>
-          <dt class="font-medium text-lg">Host a Flask app on Nest</dt>
-          <dd class="mt-1 text-lg">
-            This part can be a bit tricky, so take a look at this
-            <a
-              href="https://github.com/eesazahed/flask-movies/blob/main/README.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="underline text-cyan-600 font-semibold"
-              >guide</a
-            >
-            I wrote
-          </dd>
-        </div>
-      </dl>
+    <!-- <section class="pt-8 mb-16 max-w-3xl mx-auto" id="guides">
+        <h2 class="text-4xl font-medium mb-6">Guides</h2>
+        <dl class="space-y-6">
+          <div>
+            <dt class="font-medium text-lg">Getting started with Flask</dt>
+            <dd class="mt-1 text-lg">
+              See how to make a simple Flask app
+              <a
+                href="https://github.com/eesazahed/slushies/blob/main/TUTORIAL.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline text-cyan-600 font-semibold"
+                >here</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt class="font-medium text-lg">SQLite with Python</dt>
+            <dd class="mt-1 text-lg">
+              Learn how to perform basic CRUD (create, read, update, delete)
+              operations
+              <a
+                href="https://www.freecodecamp.org/news/sqlite-python-beginners-tutorial/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline text-cyan-600 font-semibold"
+                >here</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt class="font-medium text-lg">Host a Flask app on Nest</dt>
+            <dd class="mt-1 text-lg">
+              This part can be a bit tricky, so take a look at this
+              <a
+                href="https://github.com/eesazahed/flask-movies/blob/main/README.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline text-cyan-600 font-semibold"
+                >guide</a
+              >
+              I wrote
+            </dd>
+          </div>
+        </dl>
+      </section> -->
+
+    <section class="pt-8 mb-16 max-w-3xl mx-auto" id="guides">
+      <h2 class="text-4xl font-medium">Some useful guides!</h2>
+
+      <section
+        class="mt-10 mb-16 grid grid-cols-1 md:grid-cols-2 gap-10 text-center text-white"
+      >
+        <a
+          id="flask-card"
+          href="https://github.com/eesazahed/slushies/blob/main/TUTORIAL.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
+        >
+          <h2 class="text-3xl font-medium">Getting started with Flask</h2>
+        </a>
+        <a
+          id="sqlite-card"
+          href="https://www.freecodecamp.org/news/sqlite-python-beginners-tutorial/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
+        >
+          <h2 class="text-3xl font-medium">Basic CRUD with SQLite</h2>
+        </a>
+        <a
+          id="nest-card"
+          href="https://github.com/eesazahed/flask-movies/blob/main/README.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
+        >
+          <h2 class="text-3xl font-medium">Hosting a Flask app on Nest</h2>
+        </a>
+        <a
+          id="cs50-card"
+          href="https://cs50.harvard.edu/x/weeks/9/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card p-12 border border-3 border-sky-300 rounded-3xl transition duration-250 cursor-pointer hover:border-sky-500 hover:scale-105"
+        >
+          <h2 class="text-3xl font-medium">CS50x Week 9: Flask</h2>
+        </a>
+      </section>
     </section>
 
     <footer class="pt-8 text-base text-center text-gray-600">
@@ -333,7 +399,9 @@
           >#slushies</a
         >
         on Hack Club Slack or email
-        <a href="mailto:eesa@hackclub.app" class="underline text-cyan-600 font-semibold"
+        <a
+          href="mailto:eesa@hackclub.app"
+          class="underline text-cyan-600 font-semibold"
           >eesa@hackclub.app</a
         >
       </p>
