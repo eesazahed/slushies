@@ -69,7 +69,7 @@
           href="https://flask.palletsprojects.com/en/stable/"
           target="_blank"
           rel="noopener noreferrer"
-          class="underline text-cyan-600 font-semibold"
+          class="underline"
           >Flask</a
         >
         YSWS
@@ -239,7 +239,7 @@
         <div>
           <dt class="font-medium text-lg">Are there example projects?</dt>
           <dd class="mt-1 text-lg">
-            I made a demo Flask project with CRUD on
+            I made a demo Flask project with SQLite on
             <a
               href="https://github.com/eesazahed/flask-movies"
               target="_blank"
