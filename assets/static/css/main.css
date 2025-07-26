@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Sour Gummy", sans-serif;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.pulse {
+  animation: pulse 0.75s ease-in-out infinite;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: none;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #63636399;
+  z-index: 1;
+}
+
+.card * {
+  position: relative;
+  z-index: 2;
+}
+
+#coding-card {
+  background: url("/assets/static/images/coding.png") center/cover no-repeat;
+}
+#slushies-card {
+  background: url("/assets/static/images/slushies.png") center/cover no-repeat;
+}
+#flask-card {
+  background: url("/assets/static/images/flask.png") center/cover no-repeat;
+}
+#sqlite-card {
+  background: url("/assets/static/images/sqlite.png") center/cover no-repeat;
+}
+#nest-card {
+  background: url("/assets/static/images/nest.png") center/cover no-repeat;
+}
+#cs50-card {
+  background: url("/assets/static/images/cs50.png") center/cover no-repeat;
+}
