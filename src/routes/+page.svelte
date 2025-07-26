@@ -69,7 +69,7 @@
           href="https://flask.palletsprojects.com/en/stable/"
           target="_blank"
           rel="noopener noreferrer"
-          class="underline"
+          class="underline text-cyan-600 font-semibold"
           >Flask</a
         >
         YSWS
@@ -138,7 +138,7 @@
               href="https://hackatime.hackclub.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="underline"
+              class="underline text-cyan-600 font-semibold"
               >Hackatime</a
             >
           </li>
@@ -148,7 +148,7 @@
               href="https://hackclub.app/"
               target="_blank"
               rel="noopener noreferrer"
-              class="underline"
+              class="underline text-cyan-600 font-semibold"
               >Nest</a
             >
             (deployment tutorial provide below)
@@ -192,7 +192,7 @@
             href="https://ysws.hackclub.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="underline"
+            class="underline text-cyan-600 font-semibold"
             >YSWS</a
           >
         </li>
@@ -217,11 +217,11 @@
               href="https://hackclub.slack.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="underline"
+              class="underline text-cyan-600 font-semibold"
               >#slushies</a
             >
             on Hack Club Slack or email
-            <a href="mailto:eesa@hackclub.app" class="underline"
+            <a href="mailto:eesa@hackclub.app" class="underline text-cyan-600 font-semibold"
               >eesa@hackclub.app</a
             >
           </dd>
@@ -244,7 +244,7 @@
               href="https://github.com/eesazahed/flask-movies"
               target="_blank"
               rel="noopener noreferrer"
-              class="underline"
+              class="underline text-cyan-600 font-semibold"
               >GitHub</a
             >.
             <br />
@@ -253,7 +253,7 @@
               href="https://github.com/eesazahed/flask-auth"
               target="_blank"
               rel="noopener noreferrer"
-              class="underline"
+              class="underline text-cyan-600 font-semibold"
               >project</a
             >
             with basic user authentication.
@@ -286,7 +286,7 @@
               href="https://github.com/eesazahed/slushies/blob/main/TUTORIAL.md"
               target="_blank"
               rel="noopener noreferrer"
-              class="underline"
+              class="underline text-cyan-600 font-semibold"
               >here</a
             >
           </dd>
@@ -300,7 +300,7 @@
               href="https://www.freecodecamp.org/news/sqlite-python-beginners-tutorial/"
               target="_blank"
               rel="noopener noreferrer"
-              class="underline"
+              class="underline text-cyan-600 font-semibold"
               >here</a
             >
           </dd>
@@ -313,7 +313,7 @@
               href="https://github.com/eesazahed/flask-movies/blob/main/README.md"
               target="_blank"
               rel="noopener noreferrer"
-              class="underline"
+              class="underline text-cyan-600 font-semibold"
               >guide</a
             >
             I wrote
@@ -329,11 +329,11 @@
           href="https://hackclub.slack.com"
           target="_blank"
           rel="noopener noreferrer"
-          class="underline"
+          class="underline text-cyan-600 font-semibold"
           >#slushies</a
         >
         on Hack Club Slack or email
-        <a href="mailto:eesa@hackclub.app" class="underline"
+        <a href="mailto:eesa@hackclub.app" class="underline text-cyan-600 font-semibold"
           >eesa@hackclub.app</a
         >
       </p>
