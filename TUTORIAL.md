@@ -6,7 +6,7 @@ Here's how to get started with Flask. This assumes you have [Python](https://www
 
 First, create an empty directory for your code and open a terminal.
 
-<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/vscode.png" width="500"><br />
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/assets/static/images/vscode.png" width="500"><br />
 
 Create a new file called `requirements.txt` and in that file, write: `flask`
 
@@ -47,13 +47,13 @@ Press CTRL+C to quit
 
 Going to http://127.0.0.1:5000 results in seeing a page stating: _"TemplateNotFound... jinja2.exceptions.TemplateNotFound: index.html"_
 
-<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/templatenotfound.png" width="500"><br />
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/assets/static/images/templatenotfound.png" width="500"><br />
 
 This is expected, as we haven't provided an index.html template for Flask to render. In the current directory we're working in, create a new folder called `templates` and there create a new HTML file called `index.html`.
 
 The current file structure should be:
 
-<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/files.png" width="500"><br />
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/assets/static/images/files.png" width="500"><br />
 
 Then write some basic HTML in this new file:
 
@@ -184,7 +184,7 @@ Now go to http://127.0.0.1:5000/testing, we should see _"hi, TESTING, this is th
 
 To add CSS, create a new empty directory called `static`, and there create a new file called `main.css`. The current file structure of the project should be:
 
-<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/files2.png" width="500"><br />
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/assets/static/images/files2.png" width="500"><br />
 
 We can change the project's font in `main.css` by writing:
 
@@ -208,7 +208,7 @@ However, the HTML files won't be able to use this CSS until we add this line to 
 
 Now if we go to http://127.0.0.1:5000/ we should see the styles in `main.css` properly applied to the HTML page:
 
-<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/static/images/html.png" width="500"><br />
+<img src="https://raw.githubusercontent.com/eesazahed/slushies/refs/heads/main/assets/static/images/html.png" width="500"><br />
 
 ### That's it for now!
 
