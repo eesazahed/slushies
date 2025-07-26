@@ -55,7 +55,7 @@
 
 <div class="md:bg-green-300 md:pb-24">
   <header
-    class="relative p-8 min-h-96 text-center bg-gradient-to-b from-purple-700 to-green-300 flex flex-col items-center justify-center overflow-hidden"
+    class="relative p-8 min-h-96 text-center bg-gradient-to-b from-purple-700 to-green-200 md:to-green-300 flex flex-col items-center justify-center overflow-hidden"
   >
     <div class="text-white my-16">
       <img src="/images/logo.png" alt="Slushies" class="h-108 mb-8 mx-auto" />
@@ -90,7 +90,7 @@
   </header>
 
   <main
-    class="max-w-4xl md:mt-24 mx-auto px-16 py-16 bg-green-200 md:border-3 md:border-green-400 md:rounded-3xl"
+    class="max-w-4xl mx-auto px-16 py-16 bg-green-200 md:border-3 md:border-green-400 md:rounded-3xl"
   >
     <section
       class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-10 text-center text-white"
