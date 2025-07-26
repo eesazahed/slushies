@@ -58,8 +58,8 @@
     class="relative p-8 min-h-96 text-center bg-gradient-to-b from-purple-700 to-green-200 md:to-green-300 flex flex-col items-center justify-center overflow-hidden"
   >
     <div class="text-white my-16">
-      <img src="/images/logo.png" alt="Slushies" class="h-108 mb-8 mx-auto" />
-      <h2 class="text-6xl font-bold mb-8 italic">
+      <img src="/images/logo.png" alt="Slushies" class="md:h-108 mb-16 md:mb-8 mx-auto" />
+      <h2 class="text-4xl md:text-6xl font-bold mb-8 italic">
         A
         <a
           href="https://flask.palletsprojects.com/en/stable/"
@@ -70,7 +70,7 @@
         >
         YSWS
       </h2>
-      <p class="text-3xl max-w-3xl mx-auto font-medium">
+      <p class="text-2xl md:text-3xl max-w-3xl mx-auto font-medium">
         Build something cool with Flask, ship your project, and get rewarded!
       </p>
       <a
@@ -90,7 +90,7 @@
   </header>
 
   <main
-    class="max-w-4xl mx-auto px-16 py-16 bg-green-200 md:border-3 md:border-green-400 md:rounded-3xl"
+    class="max-w-4xl mx-auto px-16 pb-16 md:pt-16 bg-green-200 md:border-3 md:border-green-400 md:rounded-3xl"
   >
     <section
       class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-10 text-center text-white"
