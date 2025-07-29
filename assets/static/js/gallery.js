@@ -1,21 +1,25 @@
 const parentComponent = document.getElementById("gallery");
 
 const galleryList = [
-  {
-    username: "user1",
-    github_link: "https://github.com/user/project1",
-    demo_link: "https://project1.example.com",
-    image_link: "image1.jpg",
-    project_title: "Project 1",
-  },
-  {
-    username: "user2",
-    github_link: "https://github.com/user/project2",
-    demo_link: "https://project2.example.com",
-    image_link: "image2.jpg",
-    project_title: "Project 2",
-  },
+  // {
+  //   username: "user1",
+  //   github_link: "https://github.com/user/project1",
+  //   demo_link: "https://project1.example.com",
+  //   image_link: "image1.jpg",
+  //   project_title: "Project 1",
+  // },
+  // {
+  //   username: "user2",
+  //   github_link: "https://github.com/user/project2",
+  //   demo_link: "https://project2.example.com",
+  //   image_link: "image2.jpg",
+  //   project_title: "Project 2",
+  // },
 ];
+
+if (galleryList.length === 0) {
+  parentComponent.innerHTML = `<h1 class="text-black text-3xl">Waiting for projects...</h1>`;
+}
 
 galleryList.forEach((item) => {
   const container = document.createElement("div");
