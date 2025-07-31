@@ -1,4 +1,4 @@
-# slushies ([View Live](https://slushies.vercel.app))
+# slushies ([View Live](https://slushies.hackclub.com))
 
 A Flask YSWS
 
